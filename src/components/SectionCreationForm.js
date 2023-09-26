@@ -11,7 +11,7 @@ const SectionCreationForm=()=>{
 
     //create a function to handle form submit 
     const handleFormSubmit=(e)=>{
-        e.preventDeafult();
+        e.preventDefault();
         console.log("Course Name:",courseName);
         console.log("Section Title:",sectionName);
         console.log("Section Description:",sectionDescription);
