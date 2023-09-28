@@ -1,8 +1,43 @@
 import React from "react";
-const CourseList=()=>{
+import {Link } from "react-router-dom";
+const CourseList=({data})=>{
     return(
-        <h1>CourseList Component</h1>
+<Link to={`/courses/${data._id}`}>
+  <div class="px-2 py-4 border-b-2 border-gray-300 flex flex-wrap md:flex-nowrap">
+    <div class="md:w-64 md:mb-0 pr-6 flex-shrink-0 flex flex-col">
+      <img
+        class="h-40 rounded w-full object-cover object-center"
+        src={data.course_img===""?"https://dummyimage.com/721x401":data.course_img}
+        alt="Course"
+        style={{width: "250px", height: "150px", position: "relative", left: "50%", right: "50%", transform: "translateX(-50%)"}}
+      />
+    </div>
+    <div class="md:flex-grow">
+      <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">
+       {data.course_name}
+      </h2>
+      <p class="leading-relaxed">{data.course_details}</p>
+      <div class="my-2">
+        <h3 class="tracking-widest text-blue-500 text-xs font-medium title-font">
+          {data.author}
+        </h3>
+        <h3 class="tracking-widest text-gray-500 text-xs font-medium title-font">
+          <span class="inline-block p-1 mr-1 my-1 rounded-md bg-gray-100 font-medium tracking-widest">
+           {data.level}
+          </span>
+          <span class="inline-block p-1 mr-1 my-1 rounded-md bg-gray-100 font-medium tracking-widest">
+            {data.category}
+          </span>
+        </h3>
+      </div>
+    </div>
+  </div>
+</Link>
     )
 }
 
 export default CourseList;
+
+
+
+
