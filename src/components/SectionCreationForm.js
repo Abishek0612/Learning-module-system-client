@@ -18,7 +18,8 @@ const SectionCreationForm=()=>{
         console.log("Section Video Title:",sectionVideo);
         console.log("Section Video URL:",sectionVideoURL);
 
-        const sectionURL="http://localhost:5000/newSection";
+        // const sectionURL="http://localhost:5000/newSection";
+        const sectionURL="https://lmsapp.onrender.com/newSection";
 
         //make a post request
         axios.put(

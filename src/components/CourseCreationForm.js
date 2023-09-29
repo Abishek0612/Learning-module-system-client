@@ -20,7 +20,8 @@ const CourseCreationForm=()=>{
         console.log("Course Image:",courseImage);
 
         //define a post request for creating a new course 
-        const courseURL="http://localhost:5000/newCourse";
+        // const courseURL="http://localhost:5000/newCourse";
+        const courseURL="https://lmsapp.onrender.com/newCourse";
 
         //make post request 
         axios.post(courseURL,{

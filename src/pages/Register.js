@@ -27,7 +27,8 @@ const Register=()=>{
             return;//no further execution from here 
         }
         console.log(formData);
-        const regURL="http://localhost:5000/api/users/register";
+        // const regURL="http://localhost:5000/api/users/register";
+        const regURL="https://lmsapp.onrender.com/api/users/register";
         
         axios.post(regURL,{
          name,
