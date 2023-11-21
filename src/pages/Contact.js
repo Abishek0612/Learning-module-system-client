@@ -113,12 +113,12 @@ const Contact=()=> {
         {
           icon: <FaMapSigns className="text-4xl" />,
           title: "Address",
-          desription: `123, Suite 721 New Delhi  100016`,
+          desription: `123, Suite 721 Chennai  100016`,
         },
         {
           icon: <BsFillTelephoneFill className="text-4xl" />,
           title: "Contact Number",
-          desription: `+91-953535598`,
+          desription: `+91-7550259062`,
         },
         {
           icon: <FaPaperPlane className="text-4xl" />,
